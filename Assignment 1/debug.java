@@ -25,8 +25,8 @@ public class Debug {
         //printed sentence with the sum of 2 integers
         System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
 
-        //"What I learned" - this was the first time that I have been introduced to using scanner in Java. 
-        //Also after the part of the assingment printing out the sum, I feel more confotable assigning values to strings and integers
+ 
+        //After completing the part of the assingment printing out the sum, I feel more comfortable assigning values to strings and integers
         //My biggest problem throughout this assingment was continuing to forget to add ";" at the end of each line and getting the same error over and over again :(
     }
 }
