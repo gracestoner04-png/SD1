@@ -1,0 +1,61 @@
+//Grace Stoner, Math and Data Science Major
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        //assigning name to scanner 
+        Scanner sc = new Scanner(System.in);
+
+        //starting the score at zero before begining
+        int score = 0;
+
+        //Introduing the user to the game and prompting first question
+        System.out.println("Hello and welcome to a quick three question quiz!");
+        System.out.println("We are going to start out easy, what is 4 + 4?");
+
+        //allows to user to put their answer for the first question
+        int q1 = sc.nextInt();  
+
+        if (q1 == 8) {
+            //if the user gets the right answer, update the score variable
+            score++;
+            System.out.println("Correct, your score is now " + score + " let's move on!");
+        } else {
+            //score remains the same if the correct answer is not submitted
+            System.out.println("Nope! Your score is still " + score +  " Let's move on!");
+
+        }
+
+        //repeating the steps of the frist question for the second and third
+        System.out.println("We are going to switch gears here a little, what year was the consitution of the United States signed?");
+
+        int q2 = sc.nextInt();  
+
+        if (q2 == 1787) {
+            score++;
+            System.out.println("Awesome! Your score is now " + score + " Just one more!");
+        } else {
+            System.out.println("Nope! Your score is still " + score + " Uncle Sam is shaking his head.");
+        }
+
+                System.out.println("Last question, you are so close! How many cards are in a deck?");
+
+        int q3 = sc.nextInt();  
+
+        if (q3 == 52) {
+            score++;
+            System.out.println("Perfect! You are all done!");
+        } else {
+            System.out.println("Nope! Really?");
+        }
+
+        //printing out final score for the user to see
+        System.out.println("Your final score is " + score + ".");
+
+    }
+}
+
+//What I learned - 
+//This was the first time I had added scores together like this in Java, I had done it in python but when I tried the same techniques I would use, it got an error messeage. 
+//I had to look to other sources (w3schools) to see how it was done in Java. 
+//Also getting more comfortable using the scanners.
