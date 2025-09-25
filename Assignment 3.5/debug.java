@@ -25,18 +25,16 @@ class Debug {
         }
 
         //creating if statements to determine percentage of tax reduction each household should expect
+        //tests the value for salary and people in the household then prints a value for the tax reduction, adding it to the additional taxreduction already calculated
+        //prints to the user 
         int taxReduction = 0;
         taxReduction += additionalTaxReduction;
-        //when the salary is greater than 5000 and the household is greater than 3, there is 10 percent added to the additional tax reduction that was already calulated
-        //percentage then printed to the user
         if(salary > 50000 && people > 3){
             taxReduction += 10;
             System.out.println("You get a " + taxReduction+ "% reduction on taxes.");
-        //when salary greater than 3000 and household size greater than 4, there is 9 percent added to the additional tax reduction, and printed
         } else if(salary > 30000 && people > 4){
             taxReduction += 9;
             System.out.println("You get a " + taxReduction+ "% reduction on taxes.");
-        //salary greater than 7000 and people greater than 2, 5 percent added and printed
         } else if(salary > 70000 && people > 2){
             taxReduction += 5;
             System.out.println("You get a " + taxReduction+ "% reduction on taxes.");
