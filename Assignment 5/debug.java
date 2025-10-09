@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Main {
     Scanner sc3 = new Scanner(System.in);
         System.out.println("Enter the name of your town.");
         String town = sc3.nextLine();
-        townR(town);
+        System.out.println(townR(town));
     
 
     }
@@ -37,9 +38,9 @@ public class Main {
         System.out.println("The sum of every other digit is: " + sum);
     }
 
-    public static void townR(String town){
+    public static String townR(String town){
         String reverse = new StringBuilder(town).reverse().toString();
-        System.out.println("Your town in reverse is " + reverse);
+        return(reverse);
     }
   
 }
