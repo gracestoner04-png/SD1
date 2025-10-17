@@ -44,6 +44,18 @@ public class App {
                 continue;
             }
 
+            if (selectedCaseIndex < 0 || selectedCaseIndex >= caseValues.size()) {
+                System.out.println("That’s not a valid case number! Try again.");
+                i--;
+                continue;
+        }
+
+            if (caseValues.get(selectedCaseIndex) == -1.0) {
+                System.out.println("That case has already been opened! Pick a different one.");
+                i--; 
+                continue;
+        }
+
             double chosenValue = caseValues.get(selectedCaseIndex);
             System.out.println("Case #" + selectedCaseIndex + " contained $" + chosenValue);
             caseValues.set(selectedCaseIndex, -1.0); // mark case as opened
